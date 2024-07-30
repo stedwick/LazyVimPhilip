@@ -1,4 +1,8 @@
 -- Trying Codeium
+if true then
+  return {}
+end
+
 return {
   {
     "supermaven-inc/supermaven-nvim",
