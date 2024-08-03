@@ -7,3 +7,4 @@ local opt = vim.opt
 opt.clipboard = vim.env.SSH_TTY and "" or "unnamed" -- Don't sync with system clipboard
 opt.wrap = true
 opt.updatetime = 1000
+vim.g.minipairs_disable = true
