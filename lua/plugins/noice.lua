@@ -31,6 +31,7 @@ return {
         -- auto_open = { enabled = false },
         view = "hoversmall",
       }
+      opts.presets = { inc_rename = true }
     end,
   },
 }
