@@ -5,8 +5,6 @@ return {
     cmd = "Mason",
     opts = {
       ensure_installed = {
-        "typescript-language-server",
-        "rust-analyzer",
       },
     },
     config = function(_, opts)
@@ -48,16 +46,6 @@ return {
       -- Configure individual servers
       lspconfig.lua_ls.setup({
         cmd = { "/opt/homebrew/bin/lua-language-server" },
-        capabilities = capabilities,
-        on_attach = on_attach,
-      })
-      
-      lspconfig.tsserver.setup({
-        capabilities = capabilities,
-        on_attach = on_attach,
-      })
-      
-      lspconfig.rust_analyzer.setup({
         capabilities = capabilities,
         on_attach = on_attach,
       })
