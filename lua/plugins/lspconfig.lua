@@ -1,6 +1,6 @@
 return {
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     build = ":MasonUpdate",
     cmd = "Mason",
     opts = {
@@ -12,8 +12,8 @@ return {
     end,
   },
   {
-    "williamboman/mason-lspconfig.nvim",
-    dependencies = { "williamboman/mason.nvim" },
+    "mason-org/mason-lspconfig.nvim",
+    dependencies = { "mason-org/mason.nvim" },
     opts = {
       automatic_installation = true,
     },
@@ -24,8 +24,8 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      "williamboman/mason.nvim",
-      "williamboman/mason-lspconfig.nvim",
+      "mason-org/mason.nvim",
+      "mason-org/mason-lspconfig.nvim",
       "hrsh7th/nvim-cmp",
       "hrsh7th/cmp-nvim-lsp",
     },
@@ -45,7 +45,7 @@ return {
       
       -- Configure individual servers
       lspconfig.lua_ls.setup({
-        cmd = { "/opt/homebrew/bin/lua-language-server" },
+        cmd = { "lua-language-server" },
         capabilities = capabilities,
         on_attach = on_attach,
       })
